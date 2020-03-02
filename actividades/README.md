@@ -832,6 +832,8 @@ La implementación del programa deberá ser hecha de manera modular, de modo que
 
 ```C
 #include <stdio.h>
+#include <ctype.h>
+#include <string.h>
 
 
 /*********************************************************/
@@ -855,22 +857,14 @@ void stringToMayuscula(char s[]);
 
 
 int main(void) {
-  testVolverMayuscula();
-  testEsLetra();
-  testStringToMayuscula();
-  return 0;
+  char array[100];
+    while(1){
+        printf("Ingrese un String: \n");
+        scanf("%s", array);
+        stringToMayuscula(array);
+        printf("%s \n", array);
+    }
 }
-
-/*********************************************************/
-/*            Declaraciones de las funciones             */
-/*********************************************************/
-
-#include <stdio.h>
-
-/* Funciones del programa */
-int esLetra(char ch);
-void volverMayuscula(char *ch);
-void stringToMayuscula(char s[]);
 
 /*********************************************************/
 /*             Definiciones de las funciones             */
@@ -885,8 +879,7 @@ void stringToMayuscula(char s[]);
  *   @return 1 si el caracter es una letra del alfabeto y 0 si es otro simbolo.
  */
 int esLetra(char ch) {
-  // Coloque el codigo solucion a continuacion...
-
+  return isalpha(ch);
 }
 
 /**  
@@ -896,8 +889,7 @@ int esLetra(char ch) {
  *   @return void
  */
 void volverMayuscula(char *ch) {
-  // Coloque el codigo solucion a continuacion...
-
+  *ch = toupper(*ch);
 }
 
 
@@ -909,9 +901,19 @@ void volverMayuscula(char *ch) {
  */
 
 void stringToMayuscula(char s[]) {
-  // Coloque el codigo solucion a continuacion...
+  int size=strlen(s);
 
+  int i=0;
+  while(*(s+i)!=EOF){
+      if(esLetra){
+        volverMayuscula(s+i);
+      }
+      i++;
+  }
 }
+
+
+
 ```
 
 * **Fase 2 - Testeando las funciones**: Una vez las funciones estan codificadas, verifique que implementen correctamente la logica. Para ello agregue al codigo anterior las siguientes funciones de test, e invoquelas en el main como se muestra a continuacion:

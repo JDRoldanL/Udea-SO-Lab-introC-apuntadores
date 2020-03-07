@@ -809,11 +809,13 @@ Responda las siguientes preguntas:
 2. Describa las funciones ```getchar``` y ```putchar```
 3. ¿Cuales son las condiciones necesarias para que el primer ciclo deje de ejecutarse?
 
+**Respuestas**
+```
 1. Lee caracteres desde stdin y los guarda en un array, hasta que haya leído 1000 caracteres o encuentre el caracter de final del archivo (EOF). Posteriormente imprime todos los caracteres ingresados.
 2. getchar: Lee un caracter desde stdin
    putchar: Escribe un caracter en stdout
 3. Encontrar un caracter de final de archivo (end-of-file) o haber ingresado 1000 caracteres.
-
+```
 5. **Problema de programación**: Codifique un programa que permita convertir en mayuscula una cadena de caracteres ingresada por teclado y solo terminara su ejecución cuando el usuario emplee la combinación de teclas . Por ejemplo si la entrada del programa es:
 
 ```

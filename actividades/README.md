@@ -711,7 +711,7 @@ void test(void) {
 
 Para cada uno de los ejercicio de programacion propuestos a continuacion, realice la respectiva funcion de test para probar el correcto funcionamiento de lo que se pide en el ejercicio.
 
-1. **Problema de programación**: Hacer que barra una cadena de caracteres en busca de un caracter especifico. La funcion deberá retornar el numero de veces que aparece este caracter o -1 en caso de que no este. La forma de la funcion se muestra a continuación:
+1. **Problema de programación (solución en 5.1.c)**: Hacer que barra una cadena de caracteres en busca de un caracter especifico. La funcion deberá retornar el numero de veces que aparece este caracter o -1 en caso de que no este. La forma de la funcion se muestra a continuación:
 
 ```C
 /**
@@ -726,7 +726,7 @@ int contarCaracter(char *array, char ch) {
 }
 ```
 
-2. **Problema de programación**: Hacer una funcion que permita que un usuario obtenga el subindice asociado a la primera aparicion de un caracter en un array. Si el caracter no esta la función debera retornar -1. Haga uso de la funcion del punto 1 para validar la presencia del caracter. A continuacion se muestra la forma de la función:
+2. **Problema de programación (solución en 5.2.c)**: Hacer una funcion que permita que un usuario obtenga el subindice asociado a la primera aparicion de un caracter en un array. Si el caracter no esta la función debera retornar -1. Haga uso de la funcion del punto 1 para validar la presencia del caracter. A continuacion se muestra la forma de la función:
 
 ```C
 /**
@@ -743,7 +743,7 @@ int obtenerIndice(char *array, char ch) {
 
 Para clarificar un poco la cosa, si por ejemplo la cadena es **hola: que mas** y el caracter a buscar es **:** la funcion debera retornar **4**. Por otro lado, si el caracter a buscar es la **a**, la funcion retornara **3**. Finalmente, si el caracter ingresado es **z** la funcion retornara **-1**.
 
-3. **Problema de programación**: Obtener la subcadena de una cadena dada a partir de un subindice siguiendo la siguiente funcion.
+3. **Problema de programación (solución en 5.3.c)**: Obtener la subcadena de una cadena dada a partir de un subindice siguiendo la siguiente funcion.
 
 ```C
 /**
@@ -816,7 +816,7 @@ Responda las siguientes preguntas:
    putchar: Escribe un caracter en stdout
 3. Encontrar un caracter de final de archivo (end-of-file) o haber ingresado 1000 caracteres.
 ```
-5. **Problema de programación**: Codifique un programa que permita convertir en mayuscula una cadena de caracteres ingresada por teclado y solo terminara su ejecución cuando el usuario emplee la combinación de teclas . Por ejemplo si la entrada del programa es:
+4. **Problema de programación**: Codifique un programa que permita convertir en mayuscula una cadena de caracteres ingresada por teclado y solo terminara su ejecución cuando el usuario emplee la combinación de teclas . Por ejemplo si la entrada del programa es:
 
 ```
 1234abcdABCD!
@@ -1020,7 +1020,7 @@ cadena 1: HOLA QUE MAS!!!
 cadena 2: 1234 E_-+!!HAY
 ```
 
-* **Fase 3 - Implementacin del código definitivo (el que interactua con el usuario)**: una vez con la certeza de que la funciones trabajan correctamente implemente un programa que permita la interacción con el usuario de modo que cuando este precione la combinación ```Ctrl + D``` o ```Ctrl + C``` el programa se salga. Por ejemplo una salida tipica puede ser como la mostrada a continuacin:
+* **Fase 3 - Implementacin del código definitivo (el que interactua con el usuario) (solución en 5.4.4.c)**: una vez con la certeza de que la funciones trabajan correctamente implemente un programa que permita la interacción con el usuario de modo que cuando este precione la combinación ```Ctrl + D``` o ```Ctrl + C``` el programa se salga. Por ejemplo una salida tipica puede ser como la mostrada a continuacin:
 
 ```
 Entrada > hola
@@ -1035,9 +1035,9 @@ Entrada > sisaz
 SISAZ
 Entrada > ^C
 ```
-6. **Problema de programación**: Dado un vector x de n elementos reales, donde n es impar, diseñar una función que calcule y devuelva la mediana de ese vector. La mediana es el valor tal que la mitad de los números son mayores que el valor y la otra mitad son menores. Escribir un programa que compruebe la función.
+6. **Problema de programación (solución en 5.4.6.c)**: Dado un vector x de n elementos reales, donde n es impar, diseñar una función que calcule y devuelva la mediana de ese vector. La mediana es el valor tal que la mitad de los números son mayores que el valor y la otra mitad son menores. Escribir un programa que compruebe la función.
 
-7. **Problema de programación**: Se trata de resolver el siguiente problema escolar. Dadas las notas de los alumnos de un colegio en el primer curso de bachillerato, en las diferentes asignaturas (5, por comodidad), se trata de calcular la media de cada alumno, la media de cada asignatura, la media total de la clase y ordenar los alumnos por orden decreciente de notas medias individuales.
+7. **Problema de programación (solución en 5.4.7.c)**: Se trata de resolver el siguiente problema escolar. Dadas las notas de los alumnos de un colegio en el primer curso de bachillerato, en las diferentes asignaturas (5, por comodidad), se trata de calcular la media de cada alumno, la media de cada asignatura, la media total de la clase y ordenar los alumnos por orden decreciente de notas medias individuales.
 
 **Nota**: utilizar como algoritmo de ordenación el método Shell.
 
